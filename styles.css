@@ -29,6 +29,10 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 100px;
+    height: 250px;
+    max-height: 250px;
+    white-space: nowrap; /* Forces the text to stay on a single horizontal line */
+    overflow-x: auto;    /* Adds a horizontal scrollbar when text overflows */
 }
 
 #buttons {
@@ -50,7 +54,8 @@ body {
 }
 .number-btn,
 .top-row,
-.op-button {
+.op-button,
+#equals-btn {
     width: 100px;
     height: 100px;
     margin: 10px;
